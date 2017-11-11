@@ -1,0 +1,347 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="author" content="nickshare">
+  
+  
+  
+  
+    <meta name="description" content="github注册注册过程我就不详细说了，注册完成后会进入这样一个界面，点击加号，选择new repository，如图：接着你只需填写Repository name，这里注意一下，必须是yourname.github.io，yourname就是前面的owner，如我的：别的就可以不用管了，直接点create repository，现在就完成了。
+工具准备以下工具都可以在我的百度云盘找到，当然...">
+  
+  <title>github hexo搭建个人博客 [ Nickshare ]</title>
+  
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+  <link rel="stylesheet" href="/css/random.css">
+<link rel="stylesheet" href="/css/vegas.min.css">
+<link rel="stylesheet" href="/css/highlight-railscasts.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
+  
+</head>
+
+<body>
+<div class="side-navigate hide-area">
+  
+  
+    <div class="item next">
+      <a href="/2017/11/11/hello-world/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Hello World
+      </div>
+    </div>
+  
+</div>
+<div id="outer-container" class="hide-area">
+<div id="container">
+  <div id="menu-outer" class="slide-down">
+    <div id="menu-inner">
+      <div id="brand">
+        
+        <a onClick="openUserCard()">
+          <img id="avatar" src="https://ps.ssl.qhimg.com/t01e314d3d55a9a6718.jpg"/>
+          <div id="homelink">Nickshare</div>
+        </a>
+      </div>
+      <div id="menu-list">
+        <ul>
+        
+        
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="https://github.com/nickshare/hexo-theme-random">Github</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  <article id="post">
+    <h1>github hexo搭建个人博客</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">撰写于 2017-11-11</span>
+      
+        <span id = "post-title-updated">修改于 2017-11-11</span>
+      
+      
+      
+    </p>
+    
+    <h2 id="github注册"><a href="#github注册" class="headerlink" title="github注册"></a>github注册</h2><p>注册过程我就不详细说了，注册完成后会进入这样一个界面，点击加号，选择new repository，如图：<br><img src="/2017/11/11/blog/0.png" alt="image"><br><br>接着你只需填写Repository name，<strong>这里注意一下</strong>，必须是yourname.github.io，yourname就是前面的owner，如我的：<br><br><img src="/2017/11/11/blog/1.png" alt="image"><br><br>别的就可以不用管了，直接点create repository，现在就完成了。</p>
+<h2 id="工具准备"><a href="#工具准备" class="headerlink" title="工具准备"></a>工具准备</h2><p>以下工具都可以在我的百度云盘找到，当然你随意从哪儿下载都可以，只是省得麻烦而已。网盘地址：<a href="http://pan.baidu.com/s/1qYA24W0" target="_blank" rel="external">click here</a>，密码：uouy。</p>
+<h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><p>这里我就不详细说了，搜官网直接下载就好了，安装配置一路默认就好。我已经从百度搜完了，你可以从这直接下载，<a href="https://github.com/git-for-windows/git/releases/download/v2.15.0.windows.1/Git-2.15.0-32-bit.exe" target="_blank" rel="external">32位click here</a>或<a href="https://github.com/git-for-windows/git/releases/download/v2.15.0.windows.1/Git-2.15.0-64-bit.exe" target="_blank" rel="external">64位click here</a>，官网都是。</p>
+<h3 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h3><p>同上，一路默认即可，<a href="https://npm.taobao.org/mirrors/node/v8.9.0/node-v8.9.0-x86.msi" target="_blank" rel="external">32位</a>，<a href="https://npm.taobao.org/mirrors/node/v8.9.0/node-v8.9.0-x64.msi" target="_blank" rel="external">64位</a>。</p>
+<h6 id="上面两个都下载完成后，用管理员身份打开cmd，分别输入node-v，npm-v-git-–version-如果和我的差不多，说明你上述的都安装成功了。如图："><a href="#上面两个都下载完成后，用管理员身份打开cmd，分别输入node-v，npm-v-git-–version-如果和我的差不多，说明你上述的都安装成功了。如图：" class="headerlink" title="上面两个都下载完成后，用管理员身份打开cmd，分别输入node -v，npm -v,git –version,如果和我的差不多，说明你上述的都安装成功了。如图："></a>上面两个都下载完成后，用管理员身份打开cmd，分别输入node -v，npm -v,git –version,如果和我的差不多，说明你上述的都安装成功了。如图：</h6><p><img src="/2017/11/11/blog/2.png" alt="image"></p>
+<h3 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h3><p>//以后所有命令都在git bash中输入(cmd有的会执行不了)，虽然会很卡，下面就不在赘述了。<br><br>hexo安装必须安装完上面的才成，<br>在任意空白位置右击，选择git bash here，输入npm install -g hexo -cli，如图：<br><br><img src="/2017/11/11/blog/3.png" alt="image"><br><br>然后新建一个文件夹，名字位置随意，例如我在E盘新建一个MyBlog文件夹，进入文件夹，右击选择git bash here，分别输入hexo init,npm install,这个hexo init命令可能会等很长时间，如果时间很长还没有完成，关了重新再输就好了。最终效果如图：<br><br><img src="/2017/11/11/blog/4.png" alt="image"><br><br><img src="/2017/11/11/blog/5.png" alt="image"><br><br>现在hexo就安装完成了，当然你要还有兴趣的研究更多的话，可以参看<a href="https://hexo.io/docs/" target="_blank" rel="external">hexo官网</a>。</p>
+<h3 id="git-github相关联："><a href="#git-github相关联：" class="headerlink" title="git github相关联："></a>git github相关联：</h3><p>在git bash中分别输入：git config –global user.name “github用户名”<br><br>效果如图：<br><br><img src="/2017/11/11/blog/6.png" alt="image"><br><br>git config –global user.email “邮箱”<br><br><img src="/2017/11/11/blog/7.png" alt="image"></p>
+<h4 id="密钥生成"><a href="#密钥生成" class="headerlink" title="密钥生成"></a>密钥生成</h4><p>输入：ssh-keygen -t rsa -C “邮箱”，接着连续点三次回车就好了，当然你也可以自己指定保存位置，密码，第一次是让输入保存位置，后两次是密码。一般默认即可。如图:<br><br><img src="/2017/11/11/blog/8.png" alt="image"><br><br>接下来复制rsa_pub中的文本并打开github,点击头像再点击settings，点ssh key and gpg key,将复制的内容添加进key中就好了如图：<br><br><img src="/2017/11/11/blog/9.png" alt="image"><br><br><img src="/2017/11/11/blog/10.png" alt="image"><br><br>最后点击add ssh key就完成了。<br><br>//rsa_pub所在位置：<br><br><img src="/2017/11/11/blog/11.png" alt="image"><br></p>
+<p>#####更改主题<br>git clone 网址 保存位置<br>如我的是：<br><br><img src="/2017/11/11/blog/12.png" alt="image"><br><br>现在就可以打开你新建的文件夹中的_config.yml文件进行修改，将theme: lanscape 改成你下的主题就好了，如图：<br><br><img src="/2017/11/11/blog/13.png" alt="image"><br></p>
+<h6 id="本机测试"><a href="#本机测试" class="headerlink" title="本机测试"></a>本机测试</h6><p>分别输入hexo g,hexo s,现在你就可以访问了，默认是localhost:4000。效果如图：<br><img src="/2017/11/11/blog/14.png" alt="image"></p>
+<h3 id="上传github"><a href="#上传github" class="headerlink" title="上传github"></a>上传github</h3><h5 id="更改-config-yml文件，找到deploy，并进行下面更改，如图："><a href="#更改-config-yml文件，找到deploy，并进行下面更改，如图：" class="headerlink" title="更改_config.yml文件，找到deploy，并进行下面更改，如图："></a>更改_config.yml文件，找到deploy，并进行下面更改，如图：</h5><p><img src="/2017/11/11/blog/15.png" alt="image"><br><br>先将开启的服务关闭，按Ctrl+c,然后分别输入hexo g,hexo d。这时你执行hexo d会报一个错：如图：<br><br><img src="/2017/11/11/blog/16.png" alt="image"><br><br>这是因为现在最新的版本还需要下载个东西，输入npm install hexo-deployer-git –save,下载完成后重新输入hexo g,hexo d就好了。大功告成，现在已经上传成功了。<br>你可以访问：<a href="https://yourname.github.io" target="_blank" rel="external">https://yourname.github.io</a><br><br>如我的：<br><br><img src="/2017/11/11/blog/17.png" alt="image"><br><br><img src="/2017/11/11/blog/18.png" alt="image"><br><br><img src="/2017/11/11/blog/19.png" alt="image"><br></p>
+<h6 id="最后说明一下，中途如果出现错误，建议输入hexo-clean命令，但是执行要小心。当然你也可以留言问我。"><a href="#最后说明一下，中途如果出现错误，建议输入hexo-clean命令，但是执行要小心。当然你也可以留言问我。" class="headerlink" title="最后说明一下，中途如果出现错误，建议输入hexo clean命令，但是执行要小心。当然你也可以留言问我。"></a>最后说明一下，中途如果出现错误，建议输入hexo clean命令，但是执行要小心。当然你也可以留言问我。</h6>
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#github注册"><span class="toc-text">github注册</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工具准备"><span class="toc-text">工具准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#node-js安装"><span class="toc-text">node.js安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git安装"><span class="toc-text">git安装</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#上面两个都下载完成后，用管理员身份打开cmd，分别输入node-v，npm-v-git-–version-如果和我的差不多，说明你上述的都安装成功了。如图："><span class="toc-text">上面两个都下载完成后，用管理员身份打开cmd，分别输入node -v，npm -v,git –version,如果和我的差不多，说明你上述的都安装成功了。如图：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo安装"><span class="toc-text">hexo安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-github相关联："><span class="toc-text">git github相关联：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#密钥生成"><span class="toc-text">密钥生成</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本机测试"><span class="toc-text">本机测试</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上传github"><span class="toc-text">上传github</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#更改-config-yml文件，找到deploy，并进行下面更改，如图："><span class="toc-text">更改_config.yml文件，找到deploy，并进行下面更改，如图：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#最后说明一下，中途如果出现错误，建议输入hexo-clean命令，但是执行要小心。当然你也可以留言问我。"><span class="toc-text">最后说明一下，中途如果出现错误，建议输入hexo clean命令，但是执行要小心。当然你也可以留言问我。</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+  </div>
+</div>
+
+  
+<nav id="pagination">
+  
+
+  
+
+  
+    <a href="/2017/11/11/hello-world/" class="next">下一篇 Hello World &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+
+      
+      
+    </div>
+  </div>
+
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by nickshare using
+      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
+      <br>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div id="user-card">
+  <div class="center-field">
+    <img class="avatar" src="https://ps.ssl.qhimg.com/t01e314d3d55a9a6718.jpg">
+    <p id="description">toshare</p>
+    <ul class="social-icon">
+  
+  
+    <li>
+      <a href="https://github.com/nickshare/hexo-theme-random">
+        
+          <i class="icon iconfont github">&#xe606;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://coding.net/u/Stiekel">
+        
+          <i class="icon iconfont coding">&#xe607;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://twitter.com/SidCN">
+        
+          <i class="icon iconfont twitter">&#xe600;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://weibo.com/5964050236">
+        
+          <i class="icon iconfont weibo">&#xe602;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://www.douban.com/people/Stiekel/">
+        
+          <i class="icon iconfont douban">&#xe60f;</i>
+        
+      </a>
+    </li>
+  
+</ul>
+  </div>
+</div>
+
+
+<div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
+
+
+
+
+  
+  
+    <script src="/js/jquery-2.2.3.min.js"></script>
+  
+    <script src="/js/vegas.min.js"></script>
+  
+    <script src="/js/random.js"></script>
+  
+    <script src="/js/highlight.pack.js"></script>
+  
+    <script src="/js/jquery.mousewheel.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
+
+<script>
+
+  // fancybox
+  var backgroundImages = [];
+  
+  $('#post').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
+      var alt = this.alt || this.title;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'post' + i);
+    });
+  });
+  $(".fancybox").fancybox();
+
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+  turnoffBackgroundImage = true;
+
+
+var backgroundColor = "34495E";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
+</body>
+</html>
+
